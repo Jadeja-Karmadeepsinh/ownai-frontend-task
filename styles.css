@@ -1,0 +1,145 @@
+:root {
+  --po-bg: #f7f7f9;
+  --po-card-bg: #ffffff;
+  --po-border: #e4e4e7;
+  --po-accent: #f97316;
+}
+
+body {
+  background-color: var(--po-bg);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.po-shell {
+  min-height: 100vh;
+  padding: 24px 16px;
+}
+
+@media (min-width: 992px) {
+  .po-shell {
+    padding: 40px 48px;
+  }
+}
+
+.po-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.po-back-pill {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  border: 1px solid var(--po-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--po-card-bg);
+}
+
+.po-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.po-card {
+  background-color: var(--po-card-bg);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  padding: 24px;
+}
+
+.po-section-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+.po-section-divider {
+  border-top: 1px solid var(--po-border);
+  margin: 24px 0;
+}
+
+.po-req-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fafafa;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin: 12px 0 16px;
+}
+
+.po-talent-row {
+  border-top: 1px solid #f1f1f3;
+  padding-top: 12px;
+  margin-top: 12px;
+}
+
+.po-talent-name {
+  font-weight: 500;
+}
+
+.po-error {
+  font-size: 0.8rem;
+  color: #dc2626;
+}
+
+.po-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.btn-pill {
+  border-radius: 999px;
+  padding-inline: 20px;
+}
+
+.btn-outline-soft {
+  border-radius: 999px;
+  border-color: var(--po-border);
+  color: #4b5563;
+  background-color: #fff;
+}
+
+.btn-outline-soft:hover {
+  background-color: #f3f4f6;
+  border-color: #d1d5db;
+}
+
+.btn-primary-soft {
+  border-radius: 999px;
+  background: linear-gradient(135deg, #fb923c, #ec4899);
+  border: none;
+}
+
+.btn-primary-soft:disabled {
+  opacity: 0.55;
+}
+
+.form-label span.text-danger {
+  margin-left: 2px;
+}
+
+.form-control[readonly],
+.form-select[disabled],
+.form-control:disabled {
+  background-color: #f9fafb;
+}
+
+.po-readonly-badge {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background-color: #ecfeff;
+  color: #0e7490;
+  border: 1px solid #67e8f9;
+}
+
