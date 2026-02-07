@@ -1,4 +1,4 @@
-# React.js Assessment – Purchase Order Form
+# React.js Assessment Purchase Order Form
 
 ## Overview
 
